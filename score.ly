@@ -20,7 +20,7 @@ global = {
 }
 
 rh = \relative c' {
-  \clef bass
+  \clef treble
   \metronomePaddingA
   \tag #'mini { \metronomePaddingB }
   \global-tempo
