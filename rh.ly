@@ -34,6 +34,25 @@ rh-verse-A = \relative c'' {
   r4 gis~ gis8 e4 cis8
   r4 r8 <fis' gis> <b^2 fis'^5> <cis dis> <fis,^1 cis'^3> gis
 
+  << {
+    r4 r8 b, dis cis b cis~
+    cis8 ais fis dis r2
+    r4 r8 gis b ais gis ais~
+    ais8 fis dis cis'~ cis b ais4
+
+    r4 r8 b dis cis b cis~
+    cis8 ais fis fis~ fis gis ais4
+  } \\ {
+    r4 r8 fis gis4 r8 fis~
+    fis4 r <b, cis>8 <cis dis> fis4
+    r4 r8 fis gis4 r8 dis~
+    dis4 r8 dis~ dis dis fis4
+
+    r4 r8 fis gis4 r8 fis~
+    fis4 r8 b,~ b cis fis4
+  } >>
+
+  %{ 
   r4 r8 <fis, b> <gis dis'> cis b <fis cis'>~
   q8 ais fis dis <b cis> <cis dis> fis4
   r4 r8 <fis gis> <gis b> ais gis <dis ais'>~
@@ -41,14 +60,26 @@ rh-verse-A = \relative c'' {
 
   r4 r8 <fis b> <gis dis'> cis b <fis cis'>~
   q8 ais fis <b, fis'>~ q <cis gis'> <fis ais>4
-  <d fis b>4 r8 <fis b> <gis b> <b cis> <cis d> <fis, cis'>~
+  %}
 
-  q8 g'
 }
-rh-chorus-A = \relative c''' {
-  << { a b cis dis eis4 } \\ { s4 fis,,8 fis' dis cis~ } >>
-  cis dis dis <cis, ais'> <dis b'>8 fis' dis cis~
-  cis8 dis dis <cis, ais'> <dis b'> ais' <dis, fis dis'>8 dis'
+rh-chorus-A = \relative c'' {
+  << {
+    b4 r8 b b cis d cis
+    \voiceTwo
+    r2 fis,8 fis' dis cis~
+    cis dis dis <cis, ais'> <dis b'>8 fis' dis cis~
+  } \\ {
+    <d, fis>4 r8 fis gis b cis fis,
+    \voiceOne r g' a b cis dis eis4
+    fis8 r \voiceTwo r <cis,, ais'> <dis b'>4 r
+  } >>
+  % q8 g'
+  % <d fis b>4 r8 <fis b> <gis b> <b cis> <cis d> <fis, cis'>~
+  % q8 g'
+  % << { a b cis dis eis4 } \\ { s4 fis,,8 fis' dis cis~ } >>
+  % cis dis dis <cis, ais'> <dis b'>8 fis' dis cis~
+  cis'8 dis dis <cis, ais'> <dis b'> ais' <dis, fis dis'>8 dis'
   cis8. b16~ b8 ais b cis dis <ais e>~
   q8 <gis e>4. r8 gis <fis gis ais> b~
   b8 e, e4 r8 b' <cis fis,> <dis e,>~

@@ -177,11 +177,11 @@ lh-chorus-B = \relative c {
     \oneVoice b8 fis\( gis ais b cis dis4\)
   } >>
 }
-lh-bridge = \relative c' {
+lh-bridge = \relative c {
   \set fingeringOrientations = #'(left)
   << {
     <ais gis'>1
-    <dis, cis'>
+    <dis cis'>
     <gis fis'>1
     d'2 <e, d'>2
     <a gis'>1
